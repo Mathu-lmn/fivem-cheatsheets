@@ -1,0 +1,63 @@
+# FiveM Specific Functions
+
+In FiveM, a modification for the popular game Grand Theft Auto V, there are several functions that are specific to the FiveM platform that you can use in your scripts.
+
+## Registering a Command
+To register a command that can be executed in the chat, you can use the `RegisterCommand` function.
+```lua
+-- Registering a command
+RegisterCommand("hello", function()
+    print("Hello!")
+end, false)
+```
+The first argument is the command name, the second argument is the callback function that will be executed when the command is called, and the third argument is a boolean indicating if the command should be executed on the client or the server.
+
+## Triggering an Event
+To trigger an event that can be handled by other scripts, you can use the TriggerEvent function.
+
+```lua
+-- Triggering an event
+TriggerEvent("myEvent", "Hello, World!")
+```
+The first argument is the event name, and the following arguments are passed to the event handlers.
+
+## Registering an Event
+To register an event handler, you can use the AddEventHandler function.
+
+```lua
+-- Registering an event handler
+AddEventHandler("myEvent", function(message)
+    print(message)
+end)
+```
+The first argument is the event name, and the second argument is the callback function that will be executed when the event is triggered.
+
+## Getting the Player's Position
+You can use the GetEntityCoords function to get the player's current position in the world.
+
+```lua
+-- Getting the player's position
+local player = GetPlayerPed(-1)
+local x, y, z = table.unpack(GetEntityCoords(player, true))
+```
+The first argument of the function is the player entity and the second argument is a boolean indicating whether to use the global or the entity's relative coordinates.
+
+## Creating a Blip
+You can use the AddBlipForCoord function to create a blip on the map at a specific position.
+
+```lua
+-- Creating a blip
+local blip = AddBlipForCoord(x, y, z)
+```
+The arguments passed to the function are the x, y, and z coordinates of the blip.
+
+## Setting a Blip's Icon
+You can use the SetBlipSprite function to set the icon of a blip.
+
+```lua
+-- Setting a blip's icon
+SetBlipSprite(blip, 1)
+```
+The first argument is the blip and the second argument is the icon number.
+
+This is just a small introduction to FiveM specific functions, there are many more functions, properties, and events you can use in your scripts. Be sure to check the official documentation and resources for more information and examples.

@@ -1,0 +1,85 @@
+# Basic Syntax and Data Types
+
+LUA is a lightweight and easy to learn programming language. In this section, we will cover the basic structure of a LUA script, as well as the different data types available and how to manipulate them.
+
+## Script Structure
+A LUA script is a plain text file with the `.lua` file extension. The script is executed from top to bottom, and it can contain a combination of statements, comments, and functions.
+
+### Statements
+Statements are commands that perform a specific action, such as assigning a value to a variable or calling a function. 
+
+-- This is a statement that assigns the value "hello" to the variable "greeting"
+greeting = "hello"
+
+### Comments
+Comments are used to add notes or explanations to the code and are ignored by the interpreter. In LUA, comments are created using double dashes (`--`).
+```lua
+-- This is a comment and will be ignored by the interpreter
+greeting = "hello"
+```
+### Functions
+Functions are blocks of code that perform a specific task and can be reused throughout the script. Functions are defined using the `function` keyword and are called using their name followed by parentheses (`()`).
+```lua
+-- This is a function that prints a greeting message
+function sayHello()
+    print("Hello!")
+end
+
+-- This is how the function is called
+sayHello()
+```
+
+## Data Types
+LUA supports several data types, including:
+
+### Numbers
+Numbers are used to represent numeric values and can be integers or floating-point numbers.
+```lua
+-- This is a number
+age = 25
+
+-- This is also a number, but with a decimal point
+price = 9.99
+```
+### Strings
+Strings are used to represent text and are enclosed in double or single quotes.
+```lua
+-- This is a string
+name = "John"
+
+-- This is also a string
+address = '123 Main St'
+```
+### Booleans
+Booleans are used to represent true or false values.
+```lua
+-- This is a boolean
+isValid = true
+
+-- This is also a boolean
+isCompleted = false
+```
+### Tables
+Tables are used to store collections of values and can be used as arrays or dictionaries.
+```lua
+-- This is a table
+myTable = {1, 2, 3}
+
+-- This is also a table, but with named keys
+myDictionary = {name = "John", age = 25}
+```
+### Manipulating Data
+LUA provides several built-in functions and operators for manipulating data, such as concatenating strings, performing mathematical operations, and more.
+```lua
+-- Concatenating strings
+greeting = "Hello, " .. "world!"
+
+-- Performing mathematical operations
+sum = 2 + 2
+difference = 10 - 5
+product = 2 * 3
+quotient = 10 / 2
+```
+This is just a small introduction to LUA basic syntax and data types, there is much more to learn and explore, such as control structures, libraries and modules, OOP and more.
+
+Please keep in mind that the code snippets will not run as it is and it is intended to be used as an example and reference.

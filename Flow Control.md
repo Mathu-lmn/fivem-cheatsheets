@@ -1,0 +1,47 @@
+# Flow Control
+
+In LUA, flow control statements are used to control the flow of execution of a script. These include `if`, `else`, `elseif`, `for`, `while`, and `repeat` statements.
+
+## If-Else Condition
+The `if` statement is used to check if a certain condition is true and execute a block of code if it is. The `else` statement is used as an alternative if the condition is not true.
+```lua
+-- If-else statement
+local x = 5
+if x > 10 then
+    print("x is greater than 10")
+else
+    print("x is less than or equal to 10")
+end`
+```
+## Elseif Condition
+The `elseif` statement is used to check multiple conditions. If the first condition is not true, the script will check the next one, and so on, until a true condition is found or the end of the script is reached.
+```lua
+-- Elseif statement
+local x = 5
+if x > 10 then
+    print("x is greater than 10")
+elseif x < 0 then
+    print("x is less than 0")
+else
+    print("x is between 0 and 10")
+end`
+```
+## For Loop
+The `for` loop is used to iterate over a range of numbers or elements in an array or table. The loop variable is declared and initialized before the loop, and the loop will continue until the end condition is met.
+```lua
+-- For loop
+for i = 1, 10 do
+    print(i)
+end`
+```
+## While Loop
+The `while` loop is used to execute a block of code repeatedly as long as a certain condition is true.
+```lua
+-- While loop
+local x = 5
+while x > 0 do
+    print(x)
+    x = x - 1
+end`
+```
+Please keep in mind that the code snippets will not run as it is and it is intended to be used as an example and reference.
