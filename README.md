@@ -1,6 +1,6 @@
 # LUA CheatSheets for FiveM
 
-This repository contains a collection of cheat sheets and tutorials for LUA programming in the FiveM platform.
+This repository contains a collection of cheat sheets and tutorials for Lua programming in the FiveM platform.
 
 The cheat sheets cover topics such as basic syntax, data types, variables and functions, flow control, and FiveM specific functions. The tutorials provide a detailed explanation of these topics and include examples of working code.
 
@@ -20,4 +20,4 @@ If you need help or have any questions, please open an issue and we will do our 
 
 ## Conclusion
 
-We hope that this repository will be useful for those who are learning LUA for FiveM. We will continue to update and improve the contents. Happy coding!
+We hope that this repository will be useful for those who are learning Lua for FiveM. We will continue to update and improve the contents. Happy coding!
