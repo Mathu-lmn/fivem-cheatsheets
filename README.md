@@ -1,4 +1,4 @@
-# LUA CheatSheets for FiveM
+# Lua CheatSheets for FiveM
 
 This repository contains a collection of cheat sheets and tutorials for Lua programming in the FiveM platform.
 
